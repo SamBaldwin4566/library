@@ -1,0 +1,141 @@
+/* Styles for whole page */
+body {
+    background-color:grey;
+    color:wheat;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* Main heading with border on bottom to separate */
+#heading1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+    padding:50px;
+    background-color:darkslategray;
+    border-bottom: wheat 3px solid;
+    margin-top: -10px;
+    margin-left: -10px;
+    width:95%
+    
+    
+}
+hr {
+    height: 3px;
+    background: wheat;
+}
+h3 {
+    text-align:center
+}
+
+/* Create container as grid to keep structure on webpage */
+#container {
+    display:grid;
+}
+
+/* Bookshelf has sticky so it moves with the page*/
+#bookshelf {
+    width:100vw;
+    grid-row:1;
+    grid-column:1/12;
+    border-bottom: rgb(48, 23, 6) 20px solid;
+    color:black;
+    margin-top:20px;
+    padding:0px;
+    text-align: bottom;
+    background-color: grey;
+    position:sticky;
+    top:0;
+}
+
+/* Styling of each book */
+#bookshelf > p {
+    display:inline-block;
+    border: 5px solid black;
+    padding:8px;
+    margin:1px;
+    font-size: 13px;
+    writing-mode: vertical-rl;
+    min-height: 70px;
+    max-height: 150px;
+    text-align:center;
+    border-radius: 4px;
+}
+
+/* Different coloured books depending on the genre class created */
+.nonFiction{
+    background-color: darkcyan;
+}
+.horror{
+    background-color:darkkhaki
+}
+.crime{
+    background-color: darkgreen;
+}
+.sciFi{
+    background-color:olive;
+}
+.fantasy{
+    background-color:goldenrod
+}
+.romance{
+    background-color:red;
+}
+.other{
+    background-color: darkcyan;
+}
+
+/* Column 1 contains form use grid row and column to structure */
+#column1 {
+    grid-row:2;
+    grid-column:1/4;
+    width:25vw;
+    border:20px wheat ridge;
+    border-radius:10px;
+    margin:30px;
+    background-color: dimgray;
+    box-shadow: 5px 10px 10px 20px dimgray
+    
+}
+
+/* Styling inside form*/
+h2 {
+    text-align:center;
+}
+.form {
+    margin:20px;
+}
+.editForm {
+    margin:20px;
+    border:black dotted 3px;
+    padding:5px
+}
+#review {
+    height:150px;
+    width: 98%;
+}
+
+/* Colum 2 contains book information using grid row and column for structure */
+#column2{
+    grid-row:2;
+    grid-column:9/12;
+    width:60vw;
+    border:20px wheat ridge;
+    border-radius:10px;
+    margin:30px;
+    background-color: dimgray;
+    box-shadow: 5px 10px 10px 20px dimgray
+}
+table{
+    width:100%;
+    font-size:13px;
+}
+th {
+    width:20%;
+}
+td {
+    height:50px;
+}
+
+/* Use vanish class to hide elements on page */
+.vanish{
+    display: none;
+}
+

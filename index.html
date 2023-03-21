@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+    <html>
+
+        <head>
+            <title>Library</title>
+            <!-- Link the html to the style sheet -->
+            <link rel="stylesheet" href="./css/styles.css">
+        </head>
+
+        <!-- When the body loads call the my load function -->
+        <body onload="myLoad()">
+            <h1 id="heading1">WELCOME TO YOUR LIBRARY</h1>
+            <hr>
+            <h3>Click on a book to edit</h3>
+
+            <!-- Set the main page as a container for a grid -->
+            <div id="container">
+
+                <!-- Create an empty bookshelf to be populated -->
+                <div id="bookshelf">
+                    
+                </div>
+                
+                <!-- Column1 contains the input form -->
+                <div id="column1">
+                <h2>Please enter details of a book</h2>
+                <form class="form">
+                    <label for="author">Author:</label><br>
+                    <input type="text" name="author" id="author"><br><br>
+                    <label for="title">Title:</label><br>
+                    <input type="text" name="title" id="title"><br><br>
+                    <label for="genre">Genre:</label><br>
+                    <select id="genre">
+                        <option value="">Please choose a genre</option>
+                        <option value="nonFiction">Non-Fiction</option>
+                        <option value="horror">Horror</option>
+                        <option value="crime">Crime</option>
+                        <option value="sciFi">Sci-Fi</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="romance">Romance</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+                    <label for="review">Review:</label><br>
+                    <input type="text" name="review" id="review"><br><br>
+                    <button type="submit" onclick="addBook()">Add Book</button>
+                    <button id="update" type="submit" class="vanish">Update</button>
+                </form>
+                </div>
+
+                <!-- Column two contains the table that will be populated with book information -->
+                <div id="column2">
+                    <h2>Book Info</h2>
+                    <table id="bookInfo">
+                        <tr id="tableHeading">
+                            <th>Author</th>
+                            <th>Title</th>
+                            <th>Genre</th>
+                            <th>Review</th>
+                            <th></th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Link the javascript file to the html -->
+            <script type="text/javascript" src="./js/library.js"></script>
+        </body>
+    </html>
