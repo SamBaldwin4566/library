@@ -1,5 +1,5 @@
 # Library
-For this project I have created a library page that allows you to store a library of books you have read along with any reviews you wish to input. Once a book has been inputted you can select the book and either edit or delete the entry. 
+For this project I have created a library page that allows you to store a library of books you have read along with any reviews you wish to input. Once a book has been inputted it adds a book icon to your very own bookshelf and can be updated or removed at any time.
 
 1. [Installation](#install)
 2. [Usage](#usage)
