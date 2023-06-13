@@ -110,18 +110,22 @@ h2 {
 #author {
     padding: 2%;
     width: 70%;
+    border-radius:8px;
 }
 #title {
     padding: 2%;
     width: 70%;
+    border-radius:8px;
 }
 #genre {
-    padding: 2%
+    padding: 2%;
+    border-radius:8px;
 }
 #review {
     height:150px;
     width: 95%;
     padding:2%;
+    border-radius:8px;
 }
 
 /* Colum 2 contains book information using grid row and column for structure */
